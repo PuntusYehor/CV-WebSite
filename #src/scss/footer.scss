@@ -1,0 +1,34 @@
+.footer {
+	padding: 54px 0;
+
+	@media (max-width: $md3) {
+		padding: 25px 0;
+	}
+
+	text-align: center;
+
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 0 26px 0;
+	}
+
+	&__item {
+		flex: 0 0 30px;
+		height: 30px;
+
+		&:not(:last-child) {
+			margin: 0 35px 0 0;
+		}
+
+	}
+
+	&__copy {
+
+		font-size: 14px;
+		line-height: 150%;
+		color: #21243D;
+	}
+}

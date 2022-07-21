@@ -1,0 +1,84 @@
+.project {
+
+	border-bottom: 1px solid #E0E0E0;
+	padding: 0px 0 30px 0;
+	margin: 0 0 30px 0;
+
+	@media (min-width: $md3) {
+		display: flex;
+		align-items: flex-start;
+
+	}
+
+	@media (max-width: $md3) {
+		margin: 0 0 0px 0;
+	}
+
+	&__image {
+		flex: 0 0 246px;
+		min-height: 180px;
+
+		@media (max-width: $md3) {
+			display: flex;
+			padding: 0 0 60% 0;
+			margin: 0 0 17px 0;
+		}
+
+		img {
+			max-width: 100%;
+			border-radius: 6px;
+			overflow: hidden;
+		}
+	}
+
+	&__body {
+		flex: 1 1 auto;
+
+		@media (min-width: $md3) {
+			padding: 0 0 0 18px;
+		}
+
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 146.66667%;
+		color: #21243D;
+		margin: 0 0 2px 0;
+
+		@media (min-width: $md3) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__headings {
+		display: flex;
+		align-items: center;
+		padding: 18px 0;
+		margin: 0 0 5px 0;
+	}
+
+	&__data {
+		display: block;
+		font-weight: 900;
+		font-size: 18px;
+		line-height: 145%;
+		color: #FFFFFF;
+		background-color: #142850;
+		border-radius: 16px;
+		margin: 0 26px 0 0;
+		padding: 0 10px;
+
+	}
+
+	&__category {
+		display: block;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 145%;
+		color: #8695A4;
+	}
+}

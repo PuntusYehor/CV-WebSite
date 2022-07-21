@@ -1,0 +1,115 @@
+// ================Шрифты=======================
+
+$font-family: 'Heebo', sans-serif;
+
+// ================//Шрифты=======================
+
+// ================Переменные=======================
+
+$min-width: 320px;
+$max-width: 1152px;
+$max-container-width: 856px;
+$md1: 991.98px;
+$md2: $max-container-width + 12px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+// ================//Переменные=======================
+
+// ==============Обнуления, общие параметры===================
+
+@import "null.scss";
+
+body {
+	color: #000;
+	font-size: 16px;
+	font-family: $font-family;
+	font-weight: 400;
+}
+
+body._lock {
+	overflow: hidden;
+}
+
+// ==============//Обнуления, общие параметры===================
+
+// ==============Сетка=========================
+
+.wrapper {
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+
+	& main {
+		flex: 1 1 auto;
+	}
+}
+
+._container {
+	max-width: $max-container-width;
+	margin: 0 auto;
+
+	@media (max-width: $md2) {
+		max-width: 750px;
+	}
+
+	@media (max-width: $md3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+// ================//Сетка=======================
+
+// ======================PAGE===========================
+.page {
+	padding: 90px 0;
+
+	@media (max-width: $md3) {
+		padding: 45px 0;
+	}
+}
+
+@import "header.scss";
+@import "home.scss";
+@import "footer.scss";
+@import "project-block.scss";
+@import "blog.scss";
+@import "work.scss";
+@import "article.scss";
+
+// ======================/PAGE===========================
+
+
+// ======================BEM BLOCKS===========================
+.title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 136%;
+	color: #21243D;
+
+	@media(max-width:$md4) {
+		font-size: 32px;
+		margin: 0 0 21px 0;
+	}
+}
+
+.text-block {
+	line-height: 150%;
+	color: #21243D;
+}
+
+.sub-title {
+	font-weight: 400;
+	font-size: 22px;
+	color: #21243D;
+	line-height: 273%;
+
+	@media (max-width: $md3) {
+		font-size: 18px;
+	}
+}
+
+// ======================/BEM BLOCKS===========================
